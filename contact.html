@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved | Twin Cities Animal Rescue</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <img src="rescue-logo_c.png" alt="Twin Cities Animal Rescue logo" width="150">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Adopt, Foster &amp; Volunteer</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Get Involved</h1>
+    <p>Want to volunteer, foster, or learn more about adoption? Fill out the form below and our team will reach out within two business days.</p>
+
+    <section>
+      <h2>Volunteer &amp; Foster Interest Form</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Your Information</legend>
+
+          <p>
+            <label for="name">Full name:</label><br>
+            <input type="text" id="name" name="name" required minlength="2">
+          </p>
+
+          <p>
+            <label for="email">Email address:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Interest</legend>
+
+          <p>I am interested in:</p>
+          <p>
+            <input type="radio" id="interest-volunteer" name="interest" value="volunteer" required>
+            <label for="interest-volunteer">Volunteering</label><br>
+
+            <input type="radio" id="interest-foster" name="interest" value="foster">
+            <label for="interest-foster">Fostering an animal</label><br>
+
+            <input type="radio" id="interest-adoption" name="interest" value="adoption">
+            <label for="interest-adoption">Adoption information</label>
+          </p>
+
+          <p>My general availability: (check all that apply)</p>
+          <p>
+            <input type="checkbox" id="avail-weekday-am" name="availability" value="weekday-mornings">
+            <label for="avail-weekday-am">Weekday mornings</label><br>
+
+            <input type="checkbox" id="avail-weekday-pm" name="availability" value="weekday-evenings">
+            <label for="avail-weekday-pm">Weekday evenings</label><br>
+
+            <input type="checkbox" id="avail-weekends" name="availability" value="weekends">
+            <label for="avail-weekends">Weekends</label>
+          </p>
+
+          <p>
+            <label for="experience">Experience with pets:</label><br>
+            <select id="experience" name="experience" required>
+              <option value="">Please choose one</option>
+              <option value="none">No experience yet</option>
+              <option value="some">I have had pets before</option>
+              <option value="experienced">I have volunteered or fostered before</option>
+              <option value="professional">I work or have worked with animals professionally</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Message</legend>
+
+          <p>
+            <label for="message">Tell us a little about yourself:</label><br>
+            <textarea id="message" name="message" rows="6" cols="50" required minlength="10" maxlength="500"></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Send My Interest Form</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Service Area</h2>
+      <p>We rescue and place animals throughout the Twin Cities metro area, including Minneapolis, St. Paul, Bloomington, Roseville, Edina, and surrounding Hennepin and Ramsey County communities.</p>
+    </section>
+
+    <section>
+      <h2>Office Hours &amp; Location</h2>
+      <address>
+        Twin Cities Animal Rescue<br>
+        1420 Greenway Avenue<br>
+        Minneapolis, MN 55403
+      </address>
+      <ul>
+        <li>Monday to Friday: 10:00 AM to 6:00 PM</li>
+        <li>Saturday: 9:00 AM to 4:00 PM</li>
+        <li>Sunday: Closed (volunteer shifts only)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Twin Cities Animal Rescue. A community nonprofit serving Minneapolis&ndash;St. Paul.</p>
+  </footer>
+
+</body>
+</html>
