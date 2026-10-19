@@ -27,7 +27,9 @@
     <section>
       <h2>Volunteer &amp; Foster Interest Form</h2>
 
-      <form action="#" method="post">
+      <p id="picked-roles"></p>
+
+      <form action="#" method="post" id="interest-form" novalidate>
 
         <fieldset>
           <legend>Your Information</legend>
@@ -35,11 +37,13 @@
           <p>
             <label for="name">Full name:</label><br>
             <input type="text" id="name" name="name" required minlength="2">
+            <span class="error" id="name-error"></span>
           </p>
 
           <p>
             <label for="email">Email address:</label><br>
             <input type="email" id="email" name="email" required>
+            <span class="error" id="email-error"></span>
           </p>
         </fieldset>
 
@@ -88,12 +92,15 @@
           <p>
             <label for="message">Tell us a little about yourself:</label><br>
             <textarea id="message" name="message" rows="6" cols="50" required minlength="10" maxlength="500"></textarea>
+            <span class="error" id="message-error"></span>
           </p>
         </fieldset>
 
         <p>
           <button type="submit">Send My Interest Form</button>
         </p>
+
+        <p id="form-success"></p>
 
       </form>
     </section>
@@ -122,5 +129,6 @@
     <p>&copy; 2026 Twin Cities Animal Rescue. A community nonprofit serving Minneapolis&ndash;St. Paul.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

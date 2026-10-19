@@ -182,3 +182,58 @@ footer {
     flex: 1;
   }
 }
+
+/* ---------- Touchstone 4 additions ---------- */
+
+/* Volunteer role tracker buttons */
+.role-btn {
+  background-color: #FFFFFF;
+  color: #217C6F;
+  border: 2px solid #217C6F;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.role-btn.selected {
+  background-color: #217C6F;
+  color: #FFFFFF;
+}
+
+#role-summary {
+  font-weight: bold;
+  color: #217C6F;
+}
+
+/* Validation error messages */
+.error {
+  color: #B00020;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Saved roles note on the contact page */
+#picked-roles {
+  font-weight: bold;
+  color: #217C6F;
+}
+
+#picked-roles:empty {
+  display: none;
+}
+
+/* Success message after a valid form submission */
+#form-success {
+  background-color: #217C6F;
+  color: #FFFFFF;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+#form-success:empty {
+  display: none;
+  padding: 0;
+}
